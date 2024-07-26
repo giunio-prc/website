@@ -46,9 +46,12 @@
   };
 
   // Fix scroll position on orientation change.
-  window.onorientationchange = function () {
-    document.body.scrollTop = 0;
-  };
+  window.addEventListener(
+    "orientationchange",
+    function () {
+      document.body.scrollTop = 0;
+    }
+  );
 
   /*
 
